@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to text analyzer</title>
+</head>
+<body>
+    <h1>Welcome to text analyizer.Enter your text below</h1>
+   <form action='removepunc' method='post'>
+       {%csrf_token%}
+       <textarea name="text" style="margin: 0px;  width: 721px; height:93px;"> </textarea>
+      
+       <br><br>
+       <input type="checkbox" name="removepunc">Remove Punctuations<br>
+       <input type="checkbox" name="capfirst"> Capitalized <br>
+       <input type="checkbox" name="newlineremove"> NewLineremover <br>
+       <input type="checkbox" name="spaceremove"> Space remover <br>
+       <input type="checkbox" name="charcount"> char counter <br>
+       <button type="submit">Analyze Text</button>
+   </form>
+</body>
+</html>
